@@ -1,3 +1,10 @@
+/* CSS HEX
+https://coolors.co/006d77-83c5be-edf6f9-ffddd2-e29578
+--ming: #006d77ff;
+--middle-blue-green: #83c5beff;
+--alice-blue: #edf6f9ff;
+--unbleached-silk: #ffddd2ff;
+--dark-salmon: #e29578ff; */
 /* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none
 (public domain) */
 html,
@@ -83,7 +90,7 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 0;
+  /* border: 0; */
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -129,12 +136,166 @@ table {
 html {
   font-size: 62.5%;
 }
+
+*{
+  box-sizing: border-box;
+  border: 1px solid grey;
+}
 body {
   font-size: 1.5rem;
   line-height: 1.5;
   font-family: sans-serif;
 }
-@media (max-width: 1024px) {
+/* Header Styles */
+header {
+  display: flex;
+  width: 100%;
+  background-color: #e29578ff;
+}
+
+nav {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%
+
+}
+
+nav img {
+  height: 12vh;
+  margin: 5% 0 5% 10%;
+}
+
+nav a {
+  text-align: center;
+  padding: 1%;
+  color: black;
+}
+
+#sign-in {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 1% 3%;
+}
+
+/* End Header Styles */
+
+/* index title container styes */
+body {
+  width:100%;
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center;
+  margin: 1% auto;
+}
+
+.title-container h1 {
+font-size: 5rem;
+}
+
+.title-container h3 {
+  font-size: 3rem;
+  }
+/* 
+  .title-container p {
+    font-size: 2rem;
+    } */
+
+.title-container div {
+align-items: center; 
+width: 95%;
+}
+
+
+/* end index title container styles */
+
+/* index how it works section styles */
+.how-it-works {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center;
+}
+
+.how-it-works div {
+  display: flex;
+}
+
+/* end index how it works section styles */
+
+/* index features section styles */
+.features {
+  display: flex;
+}
+/* end index features section styles */
+
+
+/* about team page*/
+
+#main-container{
+  text-align: center;
+  width: 100%;
+}
+
+#main-container h1{
+  font-size: 5rem;
+  margin: auto;
+  padding: 2%;
+}
+
+#main-container h2{
+  font-size: 2.5rem;
+  margin: auto;
+}
+
+#allpeople {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: auto;
+}
+
+.person{
+  width: 40%;
+  /* margin-: 5%; */
+  /* display: flex; */
+  align-content: center;
+
+}
+/* .person img{
+  width: 100%;
+} */
+
+/* Footer Styles */
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e29578ff;
+}
+
+footer img {
+  height: 10vh;
+  margin: 5% 5% 1% 5%;
+}
+
+footer a {
+  text-align: center;
+  padding: 1%;
+  color: black;
+  margin: 0 10%
+}
+/* End Footer Styles */
+/*End team page*/
+
+/* @media (max-width: 1024px) {
   body {
     font-size: 0.4rem;
     line-height: 1;
@@ -150,5 +311,5 @@ body {
   body {
     font-size: 0.4rem;
     line-height: 1;
-  }
+  } */
 }
