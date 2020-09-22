@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,300&family=Rock+Salt&display=swap');
+
 /* CSS HEX
-https://coolors.co/006d77-83c5be-edf6f9-ffddd2-e29578
---ming: #006d77ff;
---middle-blue-green: #83c5beff;
---alice-blue: #edf6f9ff;
---unbleached-silk: #ffddd2ff;
---dark-salmon: #e29578ff; */
+https://coolors.co/ed6a5a-f4f1bb-9bc1bc-5ca4a9-e6ebe0
+--terra-cotta: #ed6a5aff;
+--pale-spring-bud: #f4f1bbff;
+--opal: #9bc1bcff;
+--cadet-blue: #5ca4a9ff;
+--alabaster: #e6ebe0ff;
 /* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none
+
 (public domain) */
 html,
 body,
@@ -144,13 +147,18 @@ html {
 body {
   font-size: 1.5rem;
   line-height: 1.5;
-  font-family: sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
+
+h1, h2, h3{
+font-family: 'Rock Salt', cursive;
+}
+
 /* Header Styles */
 header {
   display: flex;
   width: 100%;
-  background-color: #e29578ff;
+  background-color: #ed6a5aff;
 }
 
 nav {
@@ -190,24 +198,21 @@ body {
   justify-content: space-around;
   width: 100%;
   text-align: center;
-  margin: 1% auto;
+  background-color: #f4f1bbff;
 }
 
 .title-container h1 {
 font-size: 5rem;
 }
 
-.title-container h3 {
-  font-size: 3rem;
+.title-container h2 {
+  font-size: 2rem;
   }
-/* 
-  .title-container p {
-    font-size: 2rem;
-    } */
 
 .title-container div {
 align-items: center; 
-width: 95%;
+width: 90%;
+padding: 1% 0;
 }
 
 
@@ -219,10 +224,27 @@ width: 95%;
   justify-content: space-around;
   width: 100%;
   text-align: center;
+  background-color: #5ca4a9ff;
 }
 
-.how-it-works div {
+.how-it-works img {
+  height: 30vh;
+  margin: 5% 0 5% 10%;
+}
+
+.how-it-works h2 {
+  font-size: 4rem;
+}
+
+.how-it-works ol {
+  font-size: 2rem;
+  justify-content: flex-start;
+}
+
+.div1 {
   display: flex;
+  flex-direction: column;
+  width: 70%;
 }
 
 /* end index how it works section styles */
@@ -230,7 +252,17 @@ width: 95%;
 /* index features section styles */
 .features {
   display: flex;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center;
+  background-color: #e6ebe0ff;
 }
+
+.div2 {
+  display: flex;
+  width: 70%;
+}
+
 /* end index features section styles */
 
 
@@ -262,15 +294,28 @@ width: 95%;
 }
 
 .person{
-  width: 40%;
+  width: 30%;
   /* margin-: 5%; */
   /* display: flex; */
   align-content: center;
 
 }
-/* .person img{
-  width: 100%;
-} */
+/* about team page end*/
+
+/* location 1 page */
+#location1-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: auto;
+}
+
+#location1-container .location1box{
+  width: 40%;
+}
+
+/* location 1 page end */
 
 /* Footer Styles */
 footer {
@@ -278,7 +323,7 @@ footer {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  background-color: #e29578ff;
+  background-color: #ed6a5aff;
 }
 
 footer img {
