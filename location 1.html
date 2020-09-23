@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Expat Journal</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
     <link
       rel="stylesheet"
       href="https://fonts.google.com/specimen/Raleway?selection.family=Raleway"
@@ -13,37 +13,55 @@
 </html>
 
 <header>
-  <nav>
+  <div>
     <img src="/Resources/EJ Logo.png" alt="expat journal logo" />
-    <a href="#">Home</a>
-    <a href="#">Meet the Team</a>
-    <a href="#">Entries</a>
-    <a href="#">Sign In</a>
+   </div>
+  <nav>
+    <ul>
+      <a href="/index.html">Home</a>
+      <a href="/about team.html">Meet the Team</a>
+      <a href="/location 1.html">Entries</a>
+      <a id="sign-in" href="#">Sign In</a>
+    </ul>
   </nav>
 </header>
 
 <body>
+  <div id="switch">
+    <button onclick="document.location='/location 2.html'"><h2>Switch Vacation</h2></button>
   <section id="location1-container">
-    <div class="location1writing">
+    <div class="location1box">
       <p>August 2020</p>
       <h3>Location</h3>
       <p>Details</p>
     </div>
-    <div class="location1pics">
+    <div class="location1box">
       <img src="https://picsum.photos/400/400" alt="this is pic1" />
+      <p>The food was delicious!</p>
     </div>
-    <div class="location1pics">
+    <div class="location1box">
       <img src="https://picsum.photos/400/400" alt="this is pic2" />
+      <p>Such great beaches around</p>
     </div>
-    <div class="location1pics">
+    <div class="location1box">
       <img src="https://picsum.photos/400/400" alt="this is pic3" />
+      <p>Locals were so helpful</p>
     </div>
   </section>
 
   <footer>
-    <img src="/Resources/EJ Logo.png" alt="expat journal logo" />
-    <a href="#">Home</a>
-    <a href="#">Meet the Team</a>
-    <a href="#">Entries</a>
+    <div class="footer-1">
+      <div>
+        <img src="/Resources/EJ Logo.png" alt="expat journal logo" />
+      </div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Meet the Team</a>
+        <a href="#">Entries</a>
+      </nav>
+    </div>
+    <div id="footer-h2">
+      <p>Copyright</p>
+    </div>
   </footer>
 </body>

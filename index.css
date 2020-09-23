@@ -1,4 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,300&family=Rock+Salt&display=swap');
+
+/* CSS HEX
+https://coolors.co/ed6a5a-f4f1bb-9bc1bc-5ca4a9-e6ebe0
+--terra-cotta: #ed6a5aff;
+--pale-spring-bud: #f4f1bbff;
+--opal: #9bc1bcff;
+--cadet-blue: #5ca4a9ff;
+--alabaster: #e6ebe0ff;
 /* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none
+
 (public domain) */
 html,
 body,
@@ -83,7 +93,7 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 0;
+  /* border: 0; */
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -129,12 +139,296 @@ table {
 html {
   font-size: 62.5%;
 }
-body {
-  font-size: 1.5rem;
-  line-height: 1.5;
-  font-family: sans-serif;
+
+*{
+  box-sizing: border-box;
+  border: 1px solid grey;
 }
-@media (max-width: 1024px) {
+body {
+  font-size: 1.9rem;
+  line-height: 1.5;
+  font-family: 'Nunito', sans-serif;
+}
+
+h1, h2, h3{
+font-family: 'Rock Salt', cursive;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  width: 100%;
+  background-color: #ed6a5aff;
+}
+
+header div img {
+  height: 12vh;
+  margin: 5% 0 5% 10%;
+  width: 30%;
+  justify-content: center
+}
+
+header nav {
+  display: flex;
+  width: 100%;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+header nav ul a {
+  display: flex;
+  justify-content:flex-end;
+  text-align: center;
+  margin-left: 4%;
+  padding: 1%;
+  color: black;
+}
+
+#sign-in {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-right: 1%;
+  padding: .5% 3%;
+}
+
+/* End Header Styles */
+
+/* index title container styes */
+body {
+  width:100%;
+}
+
+.title-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center;
+  background-color: #f4f1bbff;
+}
+
+.title-container h1 {
+font-size: 5rem;
+}
+
+.title-container h2 {
+  font-size: 2rem;
+  }
+
+.title-container div {
+align-items: center; 
+width: 90%;
+padding: 1% 0;
+}
+
+
+/* end index title container styles */
+
+/* index how it works section styles */
+.how-it-works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center;
+  background-color: #5ca4a9ff;
+}
+
+.how-it-works-title {
+width: 70%
+}
+
+.how-it-works img {
+  height: 30vh;
+  margin: 5% 0 5% 10%;
+  width: 30%;
+}
+
+.how-it-works h2 {
+  font-size: 4rem;
+}
+
+.how-it-works ol {
+  list-style: decimal;
+  font-size: 2rem;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.div1 {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+}
+
+/* end index how it works section styles */
+
+/* index features section styles */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center;
+  background-color: #e6ebe0ff;
+}
+
+#features-h2 {
+  font-size: 4rem;
+  width: 100%
+}
+
+.div2 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  width: 100%
+}
+
+.div3 h3 {
+  font-size: 3rem;
+}
+
+.div3 {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.div3 img {
+  height: 40vh;
+}
+
+
+/* end index features section styles */
+
+
+/* about team page*/
+
+#main-container{
+  text-align: center;
+  width: 100%;
+}
+
+#main-container h1{
+  font-size: 5rem;
+  margin: auto;
+  padding: 2%;
+}
+
+#main-container h2{
+  font-size: 2.5rem;
+  margin: auto;
+}
+
+#allpeople {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: auto;
+}
+
+.person{
+  width: 30%;
+  /* margin-: 5%; */
+  /* display: flex; */
+  align-content: center;
+}
+
+.person img {
+  width: 90%;
+}
+/* about team page end*/
+
+/* location 1 page */
+#location1-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: auto;
+}
+
+#location1-container .location1box{
+  width: 40%;
+}
+
+/* location 1 page end */
+
+/* location 2 page */
+#switch {
+  display: block;
+  padding: 1%;
+  text-align: center;
+  margin-bottom: 1%;
+  }
+
+  .location2-container {
+    text-align: center;
+  width: 100%;
+  }
+
+  #location2-boxes{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: auto;
+  }
+
+/* location 2 page end */
+
+/* Footer Styles */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ed6a5aff;
+}
+
+.footer-1 {
+  display: flex;
+  width: 100%
+}
+
+footer img {
+  height: 12vh;
+  margin: 5% 0 5% 10%;
+  width: 30%;
+  justify-content: center
+}
+
+footer nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+footer nav a {
+  text-align: center;
+  padding: 1%;
+  color: black;
+  margin: 0 9%
+}
+
+.footer-h2 {
+  display: block;
+}
+/* End Footer Styles */
+/*End team page*/
+
+/* @media (max-width: 1024px) {
   body {
     font-size: 0.4rem;
     line-height: 1;
@@ -150,5 +444,5 @@ body {
   body {
     font-size: 0.4rem;
     line-height: 1;
-  }
-}
+  } */
+
