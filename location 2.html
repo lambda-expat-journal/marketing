@@ -13,19 +13,25 @@
 </html>
 
 <header>
+  <div>
+    <img src="/Resources/EJ Logo.png" alt="expat journal logo" />
+   </div>
   <nav>
-    <div>
-      <img src="/Resources/EJ Logo.png" alt="expat journal logo" />
-     </div>
-    <a href="/index.html">Home</a>
-    <a href="/about team.html">Meet the Team</a>
-    <a href="/location 1.html">Entries</a>
-    <a id="sign-in" href="#">Sign In</a>
+    <ul>
+      <a href="/index.html">Home</a>
+      <a href="/about team.html">Meet the Team</a>
+      <a href="/location 1.html">Entries</a>
+      <a id="sign-in" href="#">Sign In</a>
+    </ul>
   </nav>
 </header>
 
 <body>
-  <section id="location2-container">
+  <section class="location2-container">
+    <div id="switch">
+      <button onclick="document.location='/location 1.html'"><h2>Switch Vacation</h2></button>
+    </div>
+    <section id="location2-boxes">
     <div class="small-box">
       <img src="https://picsum.photos/400/400" alt="this is pic1" />
       <p>Details</p>
@@ -64,9 +70,18 @@
     </div>
   </section>
   <footer>
-    <img src="/Resources/EJ Logo.png" alt="expat journal logo" />
-    <a href="#">Home</a>
-    <a href="#">Meet the Team</a>
-    <a href="#">Entries</a>
+    <div class="footer-1">
+      <div>
+        <img src="/Resources/EJ Logo.png" alt="expat journal logo" />
+      </div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Meet the Team</a>
+        <a href="#">Entries</a>
+      </nav>
+    </div>
+    <div id="footer-h2">
+      <p>Copyright</p>
+    </div>
   </footer>
 </body>
