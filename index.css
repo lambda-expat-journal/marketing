@@ -387,16 +387,46 @@ padding: 2% 0;
 /* about team page end*/
 
 /* location 1 page */
-#location1-container {
+#location1-switch {
+  display: block;
+  padding: 1%;
+  text-align: center;
+  margin-bottom: 1%;
+  }
+
+#location1-switch h2 {
+  font-size: 2rem;
+    margin: auto;
+  }
+
+#location1-switch button {
+    border-radius: 10%;
+    padding: 1%;
+    background-color: #f4f1bbff;
+  }
+
+  #location1container{
+    background-color: #5ca4a9ff;
+  }
+
+#location1section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 90%;
+  width: 95%;
   margin: auto;
 }
 
 .location1box{
-  width: 40%;
+  width: 50%;
+}
+
+.location1box h3{
+  font-size: 2.5rem;
+}
+
+.location1box p{
+  font-size: 1.5rem;
 }
 
 .location1box img{
@@ -406,15 +436,12 @@ padding: 2% 0;
 /* location 1 page end */
 
 /* location 2 page */
-#switch {
-  display: block;
-  padding: 1%;
-  text-align: center;
-  margin-bottom: 1%;
-  }
+
 
   #switch button {
     border-radius: 10%;
+    padding: 1%;
+    background-color: #f4f1bbff;
   }
 
   .location2-container {
@@ -423,11 +450,12 @@ padding: 2% 0;
   }
   
   .location2-container h2{
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: auto;
   }
   
   .location2-boxes {
+    background-color: #5ca4a9ff;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -442,10 +470,12 @@ padding: 2% 0;
 
   .small-box img{
     width: 100%;
+    border-radius: 4%;
   }
   
   .small-box p {
     margin-bottom: 5%;
+    font-size: 1.5rem;
   }
 
   #location2-info {
@@ -455,7 +485,7 @@ padding: 2% 0;
   #location2-info h2, h3{
     padding: 2%;
   }
-#location2-info p{
+  #location2-info p{
   font-size: 1rem;
 }
 
