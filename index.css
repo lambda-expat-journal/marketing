@@ -93,7 +93,7 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  /* border: 0; */
+  border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -163,8 +163,7 @@ header {
 
 header div img {
   height: 12vh;
-  margin: 5% 0 5% 10%;
-  width: 30%;
+  margin: 10% 0 5% 10%;
   justify-content: center
 }
 
@@ -246,7 +245,6 @@ width: 70%
 .how-it-works img {
   height: 30vh;
   margin: 5% 0 5% 10%;
-  width: 30%;
 }
 
 .how-it-works h2 {
@@ -303,7 +301,6 @@ width: 70%
 .div3 img {
   height: 40vh;
 }
-
 
 /* end index features section styles */
 
@@ -403,8 +400,7 @@ footer {
 
 footer img {
   height: 12vh;
-  margin: 5% 0 5% 10%;
-  width: 30%;
+  margin: 10% 0 5% 10%;
   justify-content: center
 }
 
