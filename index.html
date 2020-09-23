@@ -8,7 +8,7 @@
 
     <title>Expat Journal - Explore the world</title>
 
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
     <link
       rel="stylesheet"
       href="https://fonts.google.com/specimen/Raleway?selection.family=Raleway"
@@ -21,27 +21,34 @@
 
 <body>
   <header>
-    <nav>
+    <div>
       <img src="/Resources/EJ Logo.png" alt="expat journal logo" />
-      <a href="#">Home</a>
-      <a href="#">Meet the Team</a>
-      <a href="#">Entries</a>
-      <a href="#">Sign In</a>
+     </div>
+    <nav>
+      <ul>
+        <a href="/index.html">Home</a>
+        <a href="/about team.html">Meet the Team</a>
+        <a href="/location 1.html">Entries</a>
+        <a id="sign-in" href="#">Sign In</a>
+      </ul>
     </nav>
   </header>
 
   <section class="title-container">
     <div>
       <h1>Expat Journal</h1>
-      <h3>An online scrapbook to help you keep track of all your favorite vacations </h3>
+      <h2>An online scrapbook to help you keep track of all your favorite vacations </h2>
       <p>Expat Journal provides a space for you to upload trip photos and add all the details to help you capture the memories. Keep them private or show them off!</p>
-      <button>button</button>
     </div>
-    <hr />
   </section>
   <section class="how-it-works">
-    <div class="div1">
+    <div class="how-it-works-title">
       <h2>How the App Works</h2>
+    </div>
+    <div class="div1">
+      <div class="div1">
+        <img src="/Resources/EJ Logo.png" alt="expat journal logo" />
+      </div>
       <ol>
         <li>Make a new profile</li>
         <li>Add a new entry</li>
@@ -53,19 +60,19 @@
     </div>
   </section>
 
-
-
-
   <section class="features">
+    <div id="features-h2">
+      <h2>Features</h2>
+    </div>
     <div class="div2">
-      <div>
+      <div class="div3">
         <h3>Lasting Memory Book</h3>
-        <img src="#" alt="EJ page layout">
+        <img src="/Resources/Layout 1.png" alt="EJ page layout">
         <p>You can visit your site to see your trip laid out in a grid</p>
       </div>
-      <div>
+      <div class="div3">
         <h3>Customizable</h3>
-        <img src="#" alt="uploading image">
+        <img src="/Resources/arrows-2029164_1280.jpg" alt="uploading image">
         <p>You can create, read, update and delete stories and photos</p>
       </div>
     </div>
@@ -74,13 +81,19 @@
 
 
   <footer>
-    <img src="/Resources/EJ Logo.png" alt="expat journal logo" />
-    <a href="#">Home</a>
-    <a href="#">Meet the Team</a>
-    <a href="#">Entries</a>
+    <div class="footer-1">
+      <div>
+        <img src="/Resources/EJ Logo.png" alt="expat journal logo" />
+      </div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Meet the Team</a>
+        <a href="#">Entries</a>
+      </nav>
+    </div>
+    <div id="footer-h2">
+      <p>Copyright</p>
+    </div>
   </footer>
 </body>
-
-
-</html>
 
