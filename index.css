@@ -150,6 +150,10 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1, h2, h3{
 font-family: 'Rock Salt', cursive;
 }
@@ -187,6 +191,11 @@ header nav ul a {
   margin-left: 4%;
   padding: 1%;
   color: black;
+}
+
+header nav ul a:hover{
+  color:white;
+  background-color: black;
 }
 
 #sign-in {
@@ -405,6 +414,11 @@ padding: 2% 0;
     background-color: #f4f1bbff;
   }
 
+  #location1-switch button:hover{
+    background-color: navy;
+    color:white;
+  }
+
   #location1container{
     background-color: #5ca4a9ff;
   }
@@ -437,11 +451,15 @@ padding: 2% 0;
 
 /* location 2 page */
 
-
   #switch button {
     border-radius: 10%;
     padding: 1%;
     background-color: #f4f1bbff;
+  }
+
+  #switch button:hover {
+    background-color: navy;
+    color:white;
   }
 
   .location2-container {
@@ -534,21 +552,295 @@ footer nav a {
 /* End Footer Styles */
 /*End team page*/
 
-/* @media (max-width: 1024px) {
+@media (max-width: 1024px) {
   body {
     font-size: 0.4rem;
     line-height: 1;
   }
 }
 @media (max-width: 800px) {
-  body {
-    font-size: 0.4rem;
-    line-height: 1;
-  }
+ /* Header Styles for 800px */
+
+  
 }
 @media (max-width: 500px) {
-  body {
+ /* Header Styles for 500px */
+body {
     font-size: 0.4rem;
     line-height: 1;
-  } */
+    width: 100%;
+  } 
 
+header {
+  padding-bottom: 2%;
+}
+
+header nav ul {
+  width: 90%;
+}
+
+header nav ul a {
+  text-align: center;
+  font-size: 1.4rem;
+}
+/* End Header Styles */
+/* Index Title container styles for 800px */
+.title-container {
+  height: 60vh;
+}
+
+.title-container h1 {
+font-size: 5.5rem;
+padding: 4% 0;
+margin-bottom: 3%;
+}
+
+.title-container h2 {
+  font-size: 2.5rem;
+  padding: 1% 0;
+  margin-bottom: 5%;
+  line-height: 1.5;
+  }
+
+.title-container div {
+align-items: center; 
+width: 85%;
+margin-bottom: 5%;
+}
+
+.title-container p{
+  font-size: 1.5rem;
+  margin-bottom: 5%;
+  margin-left: 15%;
+  width: 75%;
+}
+
+#title-sign-in {
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 1% 3%;
+  background-color: #ed6a5aff;
+  color: #f4f1bbff;
+  font-size: 1.8rem;
+  text-align: center;
+  display: flex;
+  width: 35%;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+#title-sign-in:hover {
+  background-color: navy;
+  }
+
+  #title-sign-in:active {
+    background-color: navy;
+  }
+/* end index title-container styles for 500px */
+/* index how it works container syles for 500px */
+
+.how-it-works h2 {
+  font-size: 3.5rem;
+  line-height: 4rem;
+}
+
+.div1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 3% 0;
+}
+
+.how-to-list img {
+  height: 20vh;
+  border-radius: 10%;
+}
+
+.how-to-list ol {
+  font-size: 1.7rem;
+  line-height: 3rem;
+}
+/* end how it works container styles for 500px */
+
+/* index features section styles for 500px */
+.features-container {
+  margin: 5% auto;
+}
+
+#features-h2 {
+  font-size: 4rem;
+  color: #ed6a5aff;
+  padding: 5%, 0;
+  margin-bottom: 5%;
+}
+
+.div2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%
+}
+
+.div3 h3 {
+  font-size: 3rem;
+}
+
+.div3 {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-bottom: 3%;
+}
+
+.div3 p {
+  font-size: 2rem;
+}
+/* end index features section styles for 500px */
+/* meet the team styles for 500px */
+
+#main-container h1{
+  font-size: 5rem;
+  padding: 4%;
+}
+
+.person{
+  width: 40%;
+  align-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 5%;
+  padding: 2%;
+}
+
+.person h2 {
+line-height: 1.5;
+padding-bottom: 10%;
+}
+
+.person img {
+  width: 90%;
+  border-radius: 7%;
+  margin-bottom: 3%;
+}
+/* end meet the team syles for 500px */
+/* location 1 styles for 500px */
+#location1-switch {
+  padding: 3%;
+  }
+
+#location1-switch h2 {
+  font-size: 2rem;
+  }
+
+#location1-switch button {
+    border-radius: 10%;
+    padding: 1%;
+    background-color: #f4f1bbff;
+  }
+
+#location1container{
+    background-color: #5ca4a9ff;
+    padding: 5%;
+  }
+
+#location1section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 95%;
+
+}
+
+.location1box{
+  width: 70%;
+  padding-bottom: 3%;
+}
+
+.location1box h3{
+  font-size: 2.5rem;
+  padding-bottom: 10%;
+}
+
+.location1box p{
+  font-size: 1.5rem;
+}
+
+.location1box img{
+  width: 100%;
+}
+
+/* end location 1 styles for 500px */
+/* location 2 styles for 500px */
+
+#switch button {
+  margin: 3% auto;
+}
+
+.location2-container h2{
+  font-size: 2rem;
+}
+
+.location2-boxes {
+  padding: 5% 2%;
+  width: 100%;
+  
+}
+
+.small-box{
+  width: 40%;
+  align-content: center;
+}
+
+.small-box img{
+  width: 100%;
+  border-radius: 4%;
+  padding-bottom: 3%;
+}
+
+.small-box p {
+  margin-bottom: 10%;
+  font-size: 1.5rem;
+}
+
+#location2-info {
+  align-items: center;
+  order: -4;
+  width: 70%
+}
+
+#location2-info h2{
+  font-size: 3rem;
+}
+
+#location2-info h3{
+font-size: 2.5rem;
+}
+
+#location2-info p{
+font-size: 1.5rem;
+}
+/* end location 2 styles for 500px */
+/* Footer Styles */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ed6a5aff;
+}
+
+footer nav a {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-right: 10%;
+  padding: 1%;
+  color: black;
+}
+
+#footer-h2 {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 3%;
+}
+/* End Footer Styles */
