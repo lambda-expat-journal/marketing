@@ -313,6 +313,7 @@ body {
   width: 28%;
   justify-content: center;
   margin: 0 auto;
+  background-color: rgba(244, 241, 187, 0.513);
 }
 
 @media (max-width: 800px) {
